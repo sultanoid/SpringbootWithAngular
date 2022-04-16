@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/theme/pro-theme.scss";
+@import "assets/theme/main.css";
+
+.snackbar-container {
+  background-color: #ffffff;
+  color: #212121;
+  word-break: break-word;
+  z-index: 999999;
+}
+
+.snackbar-container.success {
+  border: 3px solid #4caf50;
+}
+
+.snackbar-container.danger {
+  border: 3px solid #ea4335;
+}

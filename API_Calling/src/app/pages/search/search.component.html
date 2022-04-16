@@ -1,0 +1,13 @@
+ 
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+    <mat-form-field appearance="outline" class="col-lg-4 col-md-6 col-sm-12">
+    <mat-label>Users</mat-label>
+    <input matInput placeholder="user Name" aria-label="user Name" formControlName="name" maxlength="70" required>
+     </mat-form-field> 
+    <button class="btn btn-md btn-primary text-upper" type="submit">Save</button>
+</form>
+
+
+
+
+

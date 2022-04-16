@@ -1,0 +1,169 @@
+.login-wrapper {
+  background: url("../../../assets/images/RPA-background.jpg");
+  background-size: cover;
+  background-position: 21rem 0;
+  background-repeat: no-repeat;
+}
+.login-wrapper,
+.login-wrapper .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login-wrapper .login {
+  background: #fafafa;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  height: auto;
+  min-height: 100vh;
+  width: 26rem;
+}
+.login-wrapper .login .title {
+  color: #000;
+  font-weight: 200;
+  font-family: Metropolis, Avenir Next, Helvetica Neue, Arial, sans-serif;
+  font-size: 1.33333rem;
+  letter-spacing: normal;
+  line-height: 1.5rem;
+}
+.login-wrapper .login .title .welcome {
+  line-height: 1.5rem;
+}
+.login-wrapper .login .title .hint {
+  color: #000;
+  margin-top: 1.25rem;
+  font-size: 0.5833rem;
+}
+.login-wrapper .login .trademark {
+  font-size: 1.16667rem;
+}
+.login-wrapper .login .subtitle,
+.login-wrapper .login .trademark {
+  color: #000;
+  font-weight: 200;
+  font-family: Metropolis, Avenir Next, Helvetica Neue, Arial, sans-serif;
+  letter-spacing: normal;
+}
+.login-wrapper .login .subtitle {
+  font-size: 0.91667rem;
+  line-height: 1.5rem;
+}
+.login-wrapper .login .login-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+}
+.login-wrapper .login .login-group .auth-source,
+.login-wrapper .login .login-group .checkbox,
+.login-wrapper .login .login-group .password,
+.login-wrapper .login .login-group .username {
+  margin: 0.25rem 0 0.75rem 0;
+}
+.login-wrapper .login .login-group .tooltip-validation {
+  margin-top: 0.25rem;
+}
+.login-wrapper .login .login-group .tooltip-validation .password,
+.login-wrapper .login .login-group .tooltip-validation .username {
+  width: 100%;
+  margin-top: 0;
+}
+.login-wrapper .login .login-group .error {
+  display: none;
+  margin: 0.25rem 0 0 0;
+  padding: 0.375rem 0.5rem;
+  background: #c92100;
+  color: #fafafa;
+  border-radius: 0.125rem;
+  line-height: 0.75rem;
+}
+.login-wrapper .login .login-group .error:before {
+  display: inline-block;
+  content: "";
+  margin: 0.04167rem 0.25rem 0 0;
+  height: 0.66667rem;
+  width: 0.66667rem;
+}
+.login-wrapper .login .login-group .error.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login-wrapper .login .login-group .error.active:before {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 0.66667rem;
+  flex: 0 0 0.66667rem;
+}
+.login-wrapper .login .login-group .btn {
+  margin: 3rem 0 0 0;
+  max-width: none;
+  height: calc(2.875rem + 2px);;
+  font-size: 1.25rem;
+}
+.login-wrapper .login .login-group .error + .btn {
+  margin: 1rem 0 0 0;
+}
+.login-wrapper .login .login-group .signup {
+  margin-top: 0.5rem;
+  font-size: 1 rem;
+  text-align: center;
+}
+.login-wrapper .login:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  right: -2px;
+}
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fafafa;
+  }
+  .login-wrapper .login {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem 20%;
+  }
+  .login-wrapper .login:after {
+    content: none;
+  }
+}
+@media screen and (max-width: 544px) {
+  .login-wrapper .login {
+    padding: 1rem 15%;
+  }
+}
+
+.header .branding .title,
+header .branding .title {
+  font-size: 0.66667rem;
+  font-weight: 400;
+  font-family: Metropolis, Avenir Next, Helvetica Neue, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  color: #fafafa;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.main-container.open-hamburger-menu .header .branding .title {
+  color: #565656;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

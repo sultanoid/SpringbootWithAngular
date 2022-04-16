@@ -1,0 +1,47 @@
+<div class="login-wrapper">
+  <form
+    [formGroup]="form"
+    (ngSubmit)="onLogin(form.value)"
+    class="login needs-validation"
+    novalidate
+  >
+    <label class="title">
+      <img
+        class="d-block w-100"
+        src="../../../assets/images/images.jpg"
+        alt="Third slide"
+      />
+    </label>
+    <div class="login-group">
+      <label for="validationTooltip01">Username</label>
+      <input
+        type="text"
+        class="mb-2 form-control-lg form-control"
+        id="validationTooltip01"
+        placeholder="Username"
+        formControlName="userName"
+        required
+      />
+      <div class="valid-tooltip">Looks good!</div>
+      <div class="invalid-feedback">Please inform your username.</div>
+
+      <label for="validationTooltip02">Password</label>
+      <input
+        type="password"
+        class="mb-2 form-control-lg form-control"
+        id="validationTooltip02"
+        placeholder="Password"
+        formControlName="password"
+        required
+      />
+      <div class="valid-tooltip">Looks good!</div>
+      <div class="invalid-tooltip">Please inform your password.</div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+        Login
+      </button>
+
+      <!-- <a routerLink="/auth" class="signup"> Sign up for an Account </a> -->
+    </div>
+  </form>
+</div>

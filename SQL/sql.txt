@@ -1,0 +1,11 @@
+SELECT id, name, phone, phone_no
+FROM public.customers order by name desc;
+
+
+INSERT INTO public.purchase_history
+(id, product_name, unit_price, quantity, total_price, customer_id)
+VALUES('aedcs213', 'Asus headphone', 8000, 1, 8000, 'f8a85b41-2d10-4eea-a42c-1954652a167b');
+
+
+select * from customers c inner join purchase_history ph ON c.id =  ph.customer_id 
+where  ph.customer_id = 'f8a85b41-2d10-4eea-a42c-1954652a167b';
